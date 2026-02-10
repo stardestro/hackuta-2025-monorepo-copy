@@ -19,7 +19,7 @@ export function createSupabaseMiddlewareClient(request: NextRequest) {
                     return request.cookies.getAll()
                 },
                 // Use the new `setAll` method to set cookies on both the request and response
-                setAll(cookiesToSet) {
+                setAll(cookiesToSet: { name: any; value: any; options: any }[]) {
                     cookiesToSet.forEach(({ name, value, options }) => {
                         request.cookies.set(name, value)
                         response.cookies.set(name, value, options)
