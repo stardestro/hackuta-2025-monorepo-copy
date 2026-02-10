@@ -4,7 +4,6 @@
   "description": "Discord bot for HackUTA event management.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "dev": "nodemon index.js",
     "lint": "eslint ."
   },
