@@ -14,7 +14,7 @@ export async function createSupabaseServerClient(cookies: () => Promise<Readonly
                     return cookieStore.getAll()
                 },
                 // Use the new `setAll` method to set all cookies
-                setAll(cookiesToSet) {
+                setAll(cookiesToSet: { name: any; value: any; options: any }[]) {
                     try {
                         cookiesToSet.forEach(({ name, value, options }) =>
                             cookieStore.set(name, value, options)
