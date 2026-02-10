@@ -14,7 +14,7 @@
     "purge:users": "node scripts/purge-users.cjs",
     "interest-form:export": "node scripts/export-interest-form.cjs",
     "qr:generate": "node scripts/qr-generation/generate.cjs",
-    "start": "npm start"
+    "start": "turbo run start --filter=auth --filter=admin --filter=frontpage --filter=portal"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^10.9.1",
