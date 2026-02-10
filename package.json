@@ -14,7 +14,7 @@
     "purge:users": "node scripts/purge-users.cjs",
     "interest-form:export": "node scripts/export-interest-form.cjs",
     "qr:generate": "node scripts/qr-generation/generate.cjs",
-    "start": "run dev"
+    "start": "npm run dev"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^10.9.1",
