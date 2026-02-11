@@ -51,7 +51,7 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
       window.removeEventListener('scroll', onScroll as EventListener);
   }, []);
 
-  const authBaseUrl = process.env.NEXT_PUBLIC_AUTH_APP_URL?.replace(/\/$/, '');
+  // const authBaseUrl = process.env.NEXT_PUBLIC_AUTH_APP_URL?.replace(/\/$/, '');
   // const signInHref = authBaseUrl ? `${authBaseUrl}/login` : '/login';
   const signInHref = '/';
 
