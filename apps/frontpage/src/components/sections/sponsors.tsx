@@ -99,7 +99,7 @@ export default function Sponsors() {
               </a>
             ))}
           </div>
-          <div className="relative mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:text-sm text-gray-300/80">
+          {/* <div className="relative mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:text-sm text-gray-300/80">
             <span className="uppercase tracking-[0.35em] text-red-200">
               Interested in sponsoring?
             </span>
@@ -109,7 +109,7 @@ export default function Sponsors() {
             >
               sponsor@hackuta.org
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

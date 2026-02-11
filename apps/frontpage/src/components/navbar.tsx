@@ -52,7 +52,8 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
   }, []);
 
   const authBaseUrl = process.env.NEXT_PUBLIC_AUTH_APP_URL?.replace(/\/$/, '');
-  const signInHref = authBaseUrl ? `${authBaseUrl}/login` : '/login';
+  // const signInHref = authBaseUrl ? `${authBaseUrl}/login` : '/login';
+  const signInHref = '/';
 
   useEffect(() => {
     let isMounted = true;
@@ -92,7 +93,6 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
 
   const mobileMenuItems = [
     ...DESKTOP_LINKS,
-    shouldShowLogin ? { name: 'Login', href: signInHref } : null,
     isLoggedIn ? { name: 'Portal', href: portalHref } : null,
   ].filter(Boolean) as { name: string; href: string }[];
 
@@ -146,7 +146,7 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
           <div className="hidden items-center justify-end flex-shrink-0 md:flex">
             <a href={signInHref} className={desktopSignInClasses}>
               <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-red-500/40 via-transparent to-red-500/10 opacity-80" />
-              <span className="relative z-10">Login</span>
+              <span className="relative z-10"><s>Login</s> Disabled</span>
             </a>
           </div>
         )}
